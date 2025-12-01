@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From-Resigtion</title>
+    <link rel="stylesheet" type="text/css" href="./style-form-res.css" >
+</head>
+<body>
+        <header class="menu-bar">
+
+                <!-- Menu-bar Left -->
+
+            <div class="logo-list">
+                <h3 class="headlogo">Tralala Prima Care</h3>
+                <p class="logoSen">For Senior</p>
+            </div>
+
+                <!--Menu-list Right-->
+
+            <div class="menu-bar-list">
+                    <a href="#" >หน้าแรก</a>
+                    <a href="#" >เกี่ยวกับเรา</a>
+                    <a href="#" >บริการเรา</a>
+                    <a href="#" >เจ้าหน้าที่ของเรา</a>
+                    <a href="#" >ติดต่อเรา</a>
+                    <a href="#" >086-858-8666-icon-Tel</a>
+                    <a href="#" >icon-Acount</a>
+                    <a href="#" >เข้าสู่ระบบ</a>
+            </div>
+
+            <!-- ---------------------------------------------------->
+        </header>
+
+        <body>
+            <!-- เริ่มกล่องฝั่งซ้าย -->
+             <section class="form-left">
+                <div class="form-left-list">
+                    <h3 class="head-profile">กรอกประวัติส่วนตัว</h3>
+
+                    <p><strong>ประวัติส่วนตัว(ผู้ป่วย)</strong></p>
+                    <form class="info-detail">
+                        <p>ชื่อ</p>
+                            <input type="text" id="Fname01=" name="Fname01" class="form-input">
+                        <p>นามสกุล</p>
+                            <input type="text" id="Lnme01" name="Lnme01" class="form-input">
+                        <p>วันเกิด</p>
+                            <input type="date" id="Birthday" name="Birthday" class="form-input">
+                        <p>ที่อยู่</p>
+                            <input type="text" id="Address" name="Address" class="form-input">
+                        <p>อาการป่วย</p>
+                            <input type="text" id="State" name="State" class="form-input">
+                        <p>เบอร์โทรศัพท์</p>
+                            <input type="tel" id="Phone-me" name="Phone-me"maxlength="10" class="form-input">
+                        <p>สิ่งที่ต้องการให้ดูแลพิเศษ</p>
+                            <input type="text" id="Takecare" name="Takecare" class="form-input">
+                        <p>ยาที่รับประทานประจำ</p>
+                            <input type="text" id="Medicine" name="Medicine" class="form-input">
+                        <p>เพิ่มเติม</p>
+                            <input type="text" id="Detail" name="Detail" class="form-input">
+                    </form>
+
+                <br>
+
+                 <div class="upload-box">
+                    <p>Upload a image</p>
+                    <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+                </div>
+            </section>
+
+            </div>
+            <!-- จบกล่องฝั่งซ้าย -->
+
+            <!-- เริ่มกล่องฝั่งขวา -->
+
+            <div class="form-right">
+
+                    <p><strong>ประวัติส่วนตัว(ญาติผู้ป่วย)</strong></p>
+
+                <form>
+                    <p>ชื่อ</p>
+                        <label for="Fname02">
+                        <input type="text" id="Fname02" name="Fname02">
+                        </label>
+                    <p>นามสกุล</p>
+                        <label for="Lname02">
+                        <input type="text" id="Lname02" name="Lname02">
+                        </label>
+                    <p>เบอร์โทรศัพท์</p>
+                        <label for="Phone-co">
+                        <input type="tel" id="Phone-co" name="Phone-co"maxlength="10">
+                        </label>
+                    <p>ความสัมพันธ์กับผู้ป่วย</p>
+                        <label for="Relationship">
+                            <select name="Relationship" id="Relationship">
+                            <option value="Select">Section</option>
+                            <option value="child">ลูก</option>
+                            <option value="relative">พี่น้อง</option>
+                            <option value="grandchild">หลาน</option>
+                            <option value="friend">เพื่อน</option>
+                            </select>
+                         </label>
+                </form>
+
+                <br>
+
+                 <div class="upload-box">
+                    <p>Upload a image</p>
+                    <input type="file" id="myimage" name="myimage" accept=".jpg, .png">
+                </div>
+
+            </div>
+
+            <button class="save-btn">บันทึก</button>
+
+            <!-- เริ่มกล่องฝั่งขวา -->
+
+        </body>
+
+        <footer></footer>
+</body>
+</html>

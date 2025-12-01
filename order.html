@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<title>caregiver services platform</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		        <!--For SEO -->
+		<meta name="caregiver" content="caregiver, services, senior care">
+
+                <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="./style-order.css" >
+        <!-- <link rel="stylesheet" type="text/css" href="./style-mobile.css" /> -->
+
+                <!-- For tailwind -->
+		<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+	</head>
+
+<body>
+
+<!-- ***** Header Area Start ***** -->
+
+<!-- Navbar Start -->
+     <!-- Desktop Nav bra menu -->
+    <header class="menu-desktop">
+                <!--  Logo  -->
+        <div class="menu-desktop-logo">
+            <a href="index.html" class="logo-care">
+            <img src="./asstes/images/logo01.png" alt="logo-caregiver">
+            <p><strong>Shark</strong>Caregiver</p>
+        </div>
+        </a>
+                <!--  Menu List-->
+        <div class="menu-desktop-list">
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Services</a>
+                <a href="#">Caregiver</a>
+                <a href="#">Contact</a>
+                <a href="#">Sign in</a>
+      </div>
+    </header>
+     <main class="page">
+    <div class="container">
+      <h1 class="page-title">ตะกร้าสินค้า</h1>
+      <p class="page-subtitle">ตรวจสอบแพคเกจการดูแลและดำเนินการสั่งซื้อ</p>
+
+      <section class="cart">
+        <h2 class="section-title">รายการที่เลือก</h2>
+
+        <!-- Cart table (semantic with responsive enhancements) -->
+        <div class="cart-grid" role="table" aria-label="รายการสินค้าในตะกร้า">
+          <div class="cart-row cart-head" role="row">
+            <div class="cell" role="columnheader">สินค้า</div>
+            <div class="cell" role="columnheader">ราคา</div>
+            <div class="cell" role="columnheader">จำนวน</div>
+            <div class="cell" role="columnheader">รวมทั้งหมด</div>
+            <div class="cell" role="columnheader" aria-label="ลบ"></div>
+          </div>
+
+          <!-- Item: Care package for 2 people -->
+          <div class="cart-row" role="row">
+            <div class="cell product" role="cell">
+              <div class="product-media">
+                <img src="https://via.placeholder.com/96x96?text=2+Care" alt="แพคเกจการเรียนสำหรับดูแล 2 คน" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">แพคเกจการเรียนสำหรับดูแล 2 คน</h3>
+                <p class="product-desc">คอร์สเข้มข้นสำหรับผู้ดูแล 2 ท่าน พร้อมคู่มือและแบบฝึก</p>
+              </div>
+            </div>
+
+            <div class="cell price" role="cell">
+              <span class="price-value">฿12,500</span>
+            </div>
+
+            <div class="cell qty" role="cell">
+              <label class="sr-only" for="qty-2p">จำนวน</label>
+              <div class="qty-control">
+                <button class="btn-qty" aria-label="ลดจำนวน">−</button>
+                <input id="qty-2p" class="input-qty" type="number" min="0" step="1" value="1" inputmode="numeric" />
+                <button class="btn-qty" aria-label="เพิ่มจำนวน">+</button>
+              </div>
+            </div>
+
+            <div class="cell total" role="cell">
+              <span class="line-total">฿12,500</span>
+            </div>
+
+            <div class="cell actions" role="cell">
+              <button class="btn-link danger" aria-label="ลบรายการนี้">ลบ</button>
+            </div>
+          </div>
+
+          <!-- Item: Care package for 1 person -->
+          <div class="cart-row" role="row">
+            <div class="cell product" role="cell">
+              <div class="product-media">
+                <img src="https://via.placeholder.com/96x96?text=1+Care" alt="แพคเกจการเรียนสำหรับดูแล 1 คน" />
+              </div>
+              <div class="product-info">
+                <h3 class="product-name">แพคเกจการเรียนสำหรับดูแล 1 คน</h3>
+                <p class="product-desc">คอร์สพื้นฐานสำหรับผู้ดูแล 1 ท่าน เน้นปฏิบัติจริง</p>
+              </div>
+            </div>
+
+            <div class="cell price" role="cell">
+              <span class="price-value">฿8,900</span>
+            </div>
+
+            <div class="cell qty" role="cell">
+              <label class="sr-only" for="qty-1p">จำนวน</label>
+              <div class="qty-control">
+                <button class="btn-qty" aria-label="ลดจำนวน">−</button>
+                <input id="qty-1p" class="input-qty" type="number" min="0" step="1" value="1" inputmode="numeric" />
+                <button class="btn-qty" aria-label="เพิ่มจำนวน">+</button>
+              </div>
+            </div>
+
+            <div class="cell total" role="cell">
+              <span class="line-total">฿8,900</span>
+            </div>
+
+            <div class="cell actions" role="cell">
+              <button class="btn-link danger" aria-label="ลบรายการนี้">ลบ</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coupon + Summary -->
+        <div class="cart-layout">
+          <aside class="coupon">
+            <h3 class="section-subtitle">คูปองส่วนลด</h3>
+            <form class="coupon-form" action="#" method="post" novalidate>
+              <label for="coupon-code" class="label">กรอกรหัสคูปอง</label>
+              <div class="coupon-field">
+                <input id="coupon-code" name="coupon" type="text" class="input" placeholder="เช่น: SAVE5" aria-describedby="coupon-help" />
+                <button type="submit" class="btn-primary">ใช้คูปอง</button>
+              </div>
+              <p id="coupon-help" class="form-help">ตัวอย่างส่วนลด 5% สำหรับรหัสที่ร่วมรายการ</p>
+            </form>
+          </aside>
+
+          <aside class="summary" aria-label="สรุปรายการสั่งซื้อ">
+            <h3 class="section-subtitle">สรุปยอดชำระ</h3>
+            <dl class="totals">
+              <div class="row">
+                <dt>ยอดรวมสินค้า</dt>
+                <dd>฿21,400</dd>
+              </div>
+              <div class="row">
+                <dt>ส่วนลดคูปอง (5%)</dt>
+                <dd>− ฿1,070</dd>
+              </div>
+              <div class="row grand">
+                <dt>รวมทั้งหมด</dt>
+                <dd>฿20,330</dd>
+              </div>
+            </dl>
+            <button class="btn-checkout">ดำเนินการสั่งซื้อ</button>
+            <p class="policy">การชำระเงินปลอดภัย รองรับบัตรเครดิต/เดบิต และโอนผ่านธนาคาร</p>
+          </aside>
+        </div>
+
+</body>
+</html>
